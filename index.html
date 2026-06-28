@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainha das Betoneiras - Catálogo Digital</title>
+    <!-- Tailwind CSS para estilização rápida e ultra-leve -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Ícones FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Força a visualização com proporção de smartphone no desktop para testes, mas fica nativo no celular */
+        @media (min-width: 640px) {
+            body { max-width: 412px; margin: 0 auto; box-shadow: 0 0 20px rgba(0,0,0,0.1); min-height: 100vh; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased flex flex-col min-height-screen pb-24">
+
+    <!-- HEADER FIXO (Identidade Visual Forte e Rápida) -->
+    <header class="bg-amber-500 text-white p-4 sticky top-0 z-50 shadow-md">
+        <div class="flex items-center justify-between">
+            <div>
+                <h1 class="text-xl font-extrabold tracking-tight flex items-center gap-2">
+                    <i class="fa-solid font-black fa-screwdriver-wrench text-amber-900"></i> 
+                    RAINHA DAS BETONEIRAS
+                </h1>
+                <p class="text-xs font-medium text-amber-900 flex items-center gap-1 mt-0.5">
+                    <i class="fa-solid fa-location-dot"></i> São Lourenço da Mata & RMR - PE
+                </p>
+            </div>
+            <!-- Indicador de Status de Atendimento Online -->
+            <span class="flex h-3 w-3 relative">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+            </span>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL (Focado em Ação) -->
+    <main class="p-4 space-y-4">
+
+        <!-- BOAS-VINDAS E SELETOR DE INTENÇÃO -->
+        <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+            <h2 class="text-base font-bold text-gray-700 mb-2">Do que a sua obra precisa hoje?</h2>
+            <div class="grid grid-cols-2 gap-3">
+                <a href="#locacao" class="bg-amber-50 hover:bg-amber-100 border border-amber-200 rounded-lg p-3 text-center transition-all">
+                    <i class="fa-solid fa-truck-ramp-box text-amber-600 text-xl mb-1"></i>
+                    <p class="text-xs font-bold text-amber-900">Alugar Equipamento</p>
+                </a>
+                <a href="#assistencia" class="bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-lg p-3 text-center transition-all">
+                    <i class="fa-solid fa-gears text-blue-600 text-xl mb-1"></i>
+                    <p class="text-xs font-bold text-blue-900">Consertar Máquina</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- SEÇÃO: LOCAÇÃO DE PRODUTOS -->
+        <section id="locacao" class="space-y-3">
+            <div class="flex items-center justify-between px-1">
+                <h2 class="text-lg font-bold text-gray-800 flex items-center gap-2">
+                    <i class="fa-solid fa-building text-amber-500"></i> Para Locação
+                </h2>
+                <span class="text-xs text-gray-500 font-medium">Disponibilidade Imediata</span>
+            </div>
+
+            <!-- PRODUTO 1: Betoneira 400L -->
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-4 transition-all hover:border-amber-300">
+                <div class="flex gap-4">
+                    <!-- Placeholder de Imagem Otimizada -->
+                    <div class="w-24 h-24 bg-amber-100 text-amber-600 rounded-lg flex-shrink-0 flex flex-col items-center justify-center border border-amber-200">
+                        <i class="fa-solid fa-dharmachakra text-3xl animate-spin-slow"></i>
+                        <span class="text-[10px] font-bold mt-1 tracking-wider">400 LITROS</span>
+                    </div>
+                    <!-- Dados Técnicos -->
+                    <div class="flex-1">
+                        <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded-full">Mais Alugada</span>
+                        <h3 class="text-base font-bold text-gray-800 mt-1">Betoneira Profissional 400L</h3>
+                        <p class="text-xs text-gray-500 line-clamp-2 mt-0.5">Uso industrial e contínuo para grandes concretagens.</p>
+                        
+                        <div class="grid grid-cols-2 gap-x-2 gap-y-0.5 mt-2 text-[11px] text-gray-600 bg-gray-50 p-1.5 rounded-md">
+                            <div><i class="fa-solid fa-bolt text-amber-500"></i> Monof./Trif.</div>
+                            <div><i class="fa-solid fa-weight-hanging text-amber-500"></i> Peso: 180kg</div>
+                            <div><i class="fa-solid fa-gauge text-amber-500"></i> Motor: 2.0 cv</div>
+                            <div><i class="fa-solid fa-cubes text-amber-500"></i> Ciclo: ~280L</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Botão de Ação Polegar-Friendly -->
+                <a href="https://wa.me/5581988001870?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20alugar%20a%20Betoneira%20de%20400L." target="_blank" class="w-full bg-green-600 hover:bg-green-700 active:scale-[0.98] text-white font-bold text-sm py-2.5 px-4 rounded-lg mt-3 flex items-center justify-center gap-2 transition-all shadow-sm">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Consultar Preço e Frete
+                </a>
+            </div>
+
+            <!-- PRODUTO 2: Betoneira 150L -->
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-4 transition-all hover:border-amber-300">
+                <div class="flex gap-4">
+                    <div class="w-24 h-24 bg-gray-100 text-gray-500 rounded-lg flex-shrink-0 flex flex-col items-center justify-center border border-gray-200">
+                        <i class="fa-solid fa-circle-notch text-2xl"></i>
+                        <span class="text-[10px] font-bold mt-1 tracking-wider">150 LITROS</span>
+                    </div>
+                    <div class="flex-1">
+                        <span class="bg-gray-100 text-gray-700 text-[10px] font-bold px-2 py-0.5 rounded-full">Fácil Transporte</span>
+                        <h3 class="text-base font-bold text-gray-800 mt-1">Betoneira p/ Pequenas Reformas</h3>
+                        <p class="text-xs text-gray-500 line-clamp-2 mt-0.5">Compacta, ideal para acabamentos, calçadas e muros residenciais.</p>
+                        
+                        <div class="grid grid-cols-2 gap-x-2 gap-y-0.5 mt-2 text-[11px] text-gray-600 bg-gray-50 p-1.5 rounded-md">
+                            <div><i class="fa-solid fa-bolt text-amber-500"></i> 110V / 220V</div>
+                            <div><i class="fa-solid fa-weight-hanging text-amber-500"></i> Peso: 85kg</div>
+                            <div><i class="fa-solid fa-gauge text-amber-500"></i> Motor: 1.0 cv</div>
+                            <div><i class="fa-solid fa-cubes text-amber-500"></i> Ciclo: ~90L</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://wa.me/5581988001870?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20alugar%20a%20Betoneira%20de%20150L." target="_blank" class="w-full bg-green-600 hover:bg-green-700 active:scale-[0.98] text-white font-bold text-sm py-2.5 px-4 rounded-lg mt-3 flex items-center justify-center gap-2 transition-all shadow-sm">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Consultar Preço e Frete
+                </a>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: ASSISTÊNCIA TÉCNICA -->
+        <section id="assistencia" class="space-y-3 pt-2">
+            <div class="flex items-center justify-between px-1">
+                <h2 class="text-lg font-bold text-gray-800 flex items-center gap-2">
+                    <i class="fa-solid fa-screwdriver-wrench text-blue-600"></i> Oficina e Peças
+                </h2>
+                <span class="text-xs text-blue-600 font-bold bg-blue-50 px-2 py-0.5 rounded-full">Autorizada</span>
+            </div>
+
+            <div class="bg-gradient-to-br from-blue-900 to-blue-800 text-white rounded-xl shadow-md p-4">
+                <h3 class="text-base font-bold flex items-center gap-2">
+                    <i class="fa-solid fa-circle-check text-green-400"></i> Conserto Rápido de Máquinas
+                </h3>
+                <p class="text-xs text-blue-100 mt-1">Sua máquina parou a obra? Somos especialistas em Menegotti, CSM, Horbach e outras marcas líderes.</p>
+                
+                <ul class="text-xs text-blue-200 mt-3 space-y-1 bg-blue-950/40 p-2.5 rounded-lg">
+                    <li><i class="fa-solid fa-angle-right text-amber-400 mr-1"></i> Troca de Cremalheiras, Pinhões e Rolamentos</li>
+                    <li><i class="fa-solid fa-angle-right text-amber-400 mr-1"></i> Manutenção e Rebobinagem de Motores Elétricos</li>
+                    <li><i class="fa-solid fa-angle-right text-amber-400 mr-1"></i> Plantão de Atendimento e Entrega de Peças na RMR</li>
+                </ul>
+
+                <a href="https://wa.me/5581988001870?text=Olá,%20preciso%20de%20assistência%20técnica%20para%20uma%20betoneira." target="_blank" class="w-full bg-amber-500 hover:bg-amber-600 text-white font-bold text-sm py-2.5 px-4 rounded-lg mt-4 flex items-center justify-center gap-2 transition-all shadow-sm">
+                    <i class="fa-solid fa-wrench"></i> Solicitar Técnico Agora
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER COM CONTATO RÁPIDO -->
+    <footer class="bg-gray-900 text-gray-400 text-center p-4 text-xs border-t border-gray-800">
+        <p class="font-bold text-gray-300">A Rainha das Betoneiras</p>
+        <p class="mt-1 text-[11px]">CNPJ: 48.260.620/0001-96 | Luciara A. S. N. Máquinas</p>
+        <p class="text-[10px] mt-2 text-gray-500">Desenvolvido com foco em velocidade para redes móveis.</p>
+    </footer>
+
+    <!-- BOTÃO FIXO DE WHATSAPP (Abaixo à Direita - Posição Perfeita do Polegar) -->
+    <a href="https://wa.me/5581988001870" target="_blank" class="fixed bottom-5 right-5 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg text-2xl hover:bg-green-600 transition-transform active:scale-95 z-50">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
